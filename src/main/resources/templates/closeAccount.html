@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Close Account - SDFC BANK</title>
+</head>
+<body>
+    <h1>Close Account</h1>
+    <form th:action="@{/closeAccount}" method="post">
+        <label for="accountNumber">Account Number:</label>
+        <input type="number" id="accountNumber" name="accountNumber" /><br/>
+        <button type="submit">Close Account</button>
+    </form>
+    <a th:href="@{/}">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home - SDFC BANK</title>
+</head>
+<body>
+    <h1>Welcome to SDFC BANK</h1>
+    <nav>
+        <a th:href="@{/newAccount}">New Account</a> |
+        <a th:href="@{/balance}">Balance</a> |
+        <a th:href="@{/deposit}">Deposit</a> |
+        <a th:href="@{/withdraw}">Withdraw</a> |
+        <a th:href="@{/transfer}">Transfer</a> |
+        <a th:href="@{/closeAccount}">Close A/C</a>
+    </nav>
+    <div th:if="${message}">
+        <p th:text="${message}"></p>
+    </div>
+    <div th:if="${error}">
+        <p th:text="${error}"></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Transfer - SDFC BANK</title>
+</head>
+<body>
+    <h1>Transfer Money</h1>
+    <form th:action="@{/transfer}" method="post">
+        <label for="fromAccount">From Account Number:</label>
+        <input type="number" id="fromAccount" name="fromAccount" /><br/>
+        <label for="toAccount">To Account Number:</label>
+        <input type="number" id="toAccount" name="toAccount" /><br/>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" /><br/>
+        <button type="submit">Transfer</button>
+    </form>
+    <a th:href="@{/}">Back to Home</a>
+</body>
+</html>
